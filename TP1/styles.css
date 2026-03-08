@@ -44,6 +44,7 @@ main {
     flex: 1;
 }
 .imagen-principal {
+    scale: 1.25;
     flex: 1;
     display: flex;
     justify-content: center;
