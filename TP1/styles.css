@@ -88,6 +88,7 @@ main {
 }
 .seccion-elementos {
     padding: 5%;
+    background-color: rgb(204, 248, 255);
 }
 
 .lista-elementos {
@@ -105,7 +106,7 @@ main {
 
 .seccion-atributos {
     padding: 5%;
-    background: linear-gradient(0deg, rgba(204, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(204, 248, 255, 1) 100%);
 }
 
 code {
