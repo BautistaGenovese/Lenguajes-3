@@ -1,0 +1,23 @@
+.targetita{
+    width: 18rem;
+    margin: 20px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    padding: 15px;
+}
+.targetita h6{
+    color: #595C5F;
+}
+.boton{
+    background-color: #0D6EFD;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 13px ;
+}
+.boton:hover{
+    background-color: #0B5ED7;
+}
+.boton a{
+    color: white;
+    text-decoration: none;
+}

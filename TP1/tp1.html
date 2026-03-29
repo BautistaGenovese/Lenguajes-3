@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Side</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_1.css">
     <!-- Links de las letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +13,22 @@
 
 
 <body>
-    <nav class="navegacion">
-        <h2 class="nombre-autor">Dark Side</h2>
-        <ul id="menu-principal">
-            <li>
-                <a href="#inicio">INICIO</a>
-            </li>
-            <li>
-                <a href="#elementos">ELEMENTOS y ETIQUETAS</a>
-            </li>
-            <li>
-                <a href="#atributos">ATRIBUTOS</a>
-            </li>
-        </ul>
-    </nav>
+    <header class="cabecera">
+        <nav class="navegacion">
+            <h2 class="nombre-autor">Dark Side</h2>
+            <ul id="menu-principal">
+                <li>
+                    <a href="#inicio">INICIO</a>
+                </li>
+                <li>
+                    <a href="#elementos">ELEMENTOS y ETIQUETAS</a>
+                </li>
+                <li>
+                    <a href="#atributos">ATRIBUTOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="contenido-principal">
             <h4 id="inicio">Bautista Genovese - <i>46.790.865</i></h4>
@@ -34,14 +36,37 @@
                 Pagina HTML de prueba para el TP 1 de lenguajes
             </h1>
             <p class="parrafo">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos dolorem ducimus, modi fuga sequi eveniet illum aut cupiditate itaque inventore at, laudantium eligendi maiores nostrum repudiandae numquam in dolore sit!s
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. <strong>Eos dolorem ducimus</strong>, <em>modi fuga sequi</em> eveniet illum aut cupiditate itaque inventore at, <mark style="color: black;">laudantium eligendi</mark> maiores nostrum repudiandae numquam in dolore sit!s
             </p>
             <button class="boton">Click meee</button>
         </div>
         <div class="imagen-principal">
-            <img src="https://static.wikia.nocookie.net/evil/images/5/59/The_Death_Star.png" alt="Imagen de la estrella de la muerte">
+            <img src="https://pngfre.com/wp-content/uploads/satoru-gojo-8.png" alt="Imagen de la estrella de la muerte">
+            <div class="tecnica">
+                <div class="tecnica_rojo"></div>
+                <div class="tecnica_azul"></div>
+            </div>
         </div>
     </main>
+    <article class="detalle-etiquetas">
+        <h3>Más etiquetas HTML</h3>
+        <aside>
+            <p>En este bloque se usan <mark>mark</mark>, <strong>strong</strong> y <em>em</em> para destacar texto.</p>
+        </aside>
+        <figure>
+            <img src="https://static.wikia.nocookie.net/evil/images/5/59/The_Death_Star.png" alt="Figura de ejemplo de la Estrella de la Muerte">
+            <figcaption>Ejemplo de figura con etiqueta <code>&lt;figcaption&gt;</code>.</figcaption>
+        </figure>
+        <details>
+            <summary>Ver más información</summary>
+            <p>El elemento <code>&lt;details&gt;</code> muestra contenido adicional cuando el usuario lo abre.</p>
+        </details>
+        <div class="medidores">
+            <p>Fecha de entrega: <time datetime="2026-04-09">9 de abril de 2026</time></p>
+            <progress value="70" max="100">70%</progress>
+            <meter value="0.7" min="0" max="1">70%</meter>
+        </div>
+    </article>
     <section class="seccion-elementos" id="elementos">
         <h1 class="titulo">Elementos usados en la pagina</h1>
         <ol class="lista-elementos">
@@ -51,17 +76,31 @@
             <li><code>&lt;meta&gt;</code></li>
             <li><code>&lt;link&gt;</code></li>
             <li><code>&lt;body&gt;</code></li>
-            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;header&gt;</code></li>
             <li><code>&lt;nav&gt;</code></li>
-            <li><code>&lt;section&gt;</code></li>
             <li><code>&lt;main&gt;</code></li>
-            <li><code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</code></li>
-            <li><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code></li>
+            <li><code>&lt;section&gt;</code></li>
+            <li><code>&lt;article&gt;</code></li>
+            <li><code>&lt;aside&gt;</code></li>
+            <li><code>&lt;figure&gt;</code></li>
+            <li><code>&lt;figcaption&gt;</code></li>
+            <li><code>&lt;details&gt;</code></li>
+            <li><code>&lt;summary&gt;</code></li>
+            <li><code>&lt;h1&gt;</code></li>
+            <li><code>&lt;h2&gt;</code></li>
+            <li><code>&lt;h3&gt;</code></li>
+            <li><code>&lt;h4&gt;</code></li>
+            <li><code>&lt;ul&gt;</code></li>
+            <li><code>&lt;ol&gt;</code></li>
+            <li><code>&lt;li&gt;</code></li>
             <li><code>&lt;p&gt;</code></li>
             <li><code>&lt;a&gt;</code></li>
             <li><code>&lt;img&gt;</code></li>
             <li><code>&lt;button&gt;</code></li>
-
+            <li><code>&lt;mark&gt;</code></li>
+            <li><code>&lt;time&gt;</code></li>
+            <li><code>&lt;progress&gt;</code></li>
+            <li><code>&lt;meter&gt;</code></li>
         </ol>
     </section>
     <section class="seccion-atributos" id="atributos">
