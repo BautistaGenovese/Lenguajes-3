@@ -28,40 +28,50 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item" ><a class="nav-link" href="https://www.formula1.com/en/racing/2026" target="_blank">Calendario</a></li>
-                <li class="nav-item" ><a class="nav-link" href="https://www.formula1.com/en/results/2026/races" target="_blank">Resultados</a></li>
-                <li class="nav-item" ><a class="nav-link" href="https://www.formula1.com/en/drivers" target="_blank">Corredores</a></li>
-                <li class="nav-item" ><a class="nav-link" href="../TP1/index.html">Ir al Trabajo Práctico 1</a></li>
+                <li class="nav-item p-2" ><a class="fw-bold nav-link" href="https://www.formula1.com/en/racing/2026" target="_blank">Calendario</a></li>
+                <li class="nav-item p-2" ><a class="fw-bold nav-link" href="https://www.formula1.com/en/results/2026/races" target="_blank">Resultados</a></li>
+                <li class="nav-item p-2" ><a class="fw-bold nav-link" href="https://www.formula1.com/en/drivers" target="_blank">Corredores</a></li>
+                <li class="nav-item p-2" ><a class="fw-bold nav-link" href="../TP1/index.html">Ir al Trabajo Práctico 1</a></li>
             </ul>
             </div>
         </div>
     </nav>
 
     <header>
-        <div id="carruselF1" class="carousel slide" data-bs-ride="carousel">
+        <div id="carruselF1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselF1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carruselF1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carruselF1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/07/16084213/Record-parada-boxes-en-F1-21.jpg" class="d-block w-100" alt="F1 Pit Stop" style="object-position: center center;">
-                    <div class="carousel-caption d-md-block bg-dark bg-opacity-50 text-white border-secondary">
-                        <h5>Estrategia en Pits</h5>
-                        <p>La precisión es clave en cada segundo.</p>
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 text-white border border-secondary rounded-4 p-3 mb-4 shadow-lg">
+                        <h5 class="fw-bold text-uppercase text-danger">Estrategia en Pits</h5>
+                        <p class="fs-5 mb-0">La precisión es clave en cada segundo.</p>
                     </div>
                 </div>
+                
                 <div class="carousel-item">
                     <img src="https://img.redbull.com/images/c_crop,x_1,y_0,h_2133,w_3199/c_fill,w_2150,h_1433/q_auto:low,f_jpg/redbullcom/2016/02/29/1331779617807_3/gran-premio-de-japon-de-formula-1" class="d-block w-100" alt="F1 Racing" style="object-position: center bottom;">
-                    <div class="carousel-caption d-md-block bg-dark bg-opacity-50 text-white border-secondary">
-                        <h5>Velocidad Máxima</h5>
-                        <p>Domando los circuitos más exigentes del mundo.</p>
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 text-white border border-secondary rounded-4 p-3 mb-4 shadow-lg">
+                        <h5 class="fw-bold text-uppercase text-danger">Velocidad Máxima</h5>
+                        <p class="fs-5 mb-0">Domando los circuitos más exigentes del mundo.</p>
                     </div>
                 </div>
+                
                 <div class="carousel-item">
-                    <img src="https://coffeecornermotorsport.com/wp-content/uploads/2025/12/SI202512070327.webp" class="d-block w-100" alt="F1 Podium" style="object-position: center top;">
-                    <div class="carousel-caption d-md-block bg-dark bg-opacity-50 text-white border-secondary">
-                        <h5>La Gloria del Podio</h5>
-                        <p>El resultado del esfuerzo y la ingeniería.</p>
+                    <img src="https://media.formula1.com/image/upload/t_16by9South/c_lfill,w_3392/q_auto/v1740000001/trackside-images/2025/F1_Grand_Prix_of_Canada/2220297748.webp" class="d-block w-100" alt="F1 Podium" style="object-position: center top;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 text-white border border-secondary rounded-4 p-3 mb-4 shadow-lg">
+                        <h5 class="fw-bold text-uppercase text-danger">La Gloria del Podio</h5>
+                        <p class="fs-5 mb-0">El resultado del esfuerzo y la ingeniería.</p>
                     </div>
                 </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carruselF1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
@@ -74,20 +84,26 @@
     <main class="container mt-5">
         <div class="row">
             <div class="col-md-8">
-                <h2>El Mundo de la Fórmula 1</h2>
+                <h3 class="fw-bold border-bottom border-danger pb-2 mb-4">El Mundo de la Fórmula 1</h3>
                 <p>La Fórmula 1 es la categoría reina del automovilismo mundial. No solo se trata de pilotos rápidos, sino de una competencia de ingeniería avanzada, aerodinámica y trabajo en equipo bajo presión extrema.</p>
-                <p>Cada Gran Premio es una exhibición de tecnología donde los monoplazas alcanzan velocidades superiores a los 300 km/h, desafiando las leyes de la física en cada curva.</p>
+                <p>Cada Gran Premio es una exhibición de tecnología donde los monoplazas alcanzan velocidades superiores a los <b class="text-danger">300 km/h</b>, desafiando las leyes de la física en cada curva.</p>
             </div>
             <div class="col-md-4">
-                <div class="card bg-dark text-light border-secondary">
-                    <div class="card-body">
-                        <h5 class="card-title text-white">Datos Rápidos</h5>
-                        <ul>
-                            <li>Más de 20 circuitos por temporada.</li>
-                            <li>Motor híbrido V6 de 1.6 litros.</li>
-                            <li>Guerzas G extremas en curvas.</li>
-                        </ul>
+                <div class="card bg-dark text-light border-secondary shadow h-100">
+                    <div class="card-header border-secondary fw-bold text-uppercase text-white">
+                        Datos Rápidos
                     </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark text-light border-secondary">
+                            <span class="badge text-bg-danger rounded-pill me-2">Temporada</span> Más de 20 circuitos por temporada.
+                        </li>
+                        <li class="list-group-item bg-dark text-light border-secondary">
+                            <span class="badge text-bg-danger rounded-pill me-2">Motor</span> Motor híbrido V6 de 1.6 litros.
+                        </li>
+                        <li class="list-group-item bg-dark text-light border-secondary">
+                            <span class="badge text-bg-danger rounded-pill me-2">Física</span> Fuerzas G extremas en curvas.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -121,6 +137,49 @@
                         <div class="col-6">
                             <p>Distancia de la carrera</p>
                             <h4>307.471 km</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-4">
+            
+            <div class="col-md-8">
+                <h3 class="fw-bold border-bottom border-danger pb-2 mb-4">Nuevas Regulaciones 2026</h3>
+                <p>La temporada 2026 marca el cambio de reglamento técnico más drástico de los últimos años en la Fórmula 1, buscando mejorar el espectáculo en pista y la sostenibilidad.</p>
+                
+                <h5 class="text-warning mt-4">1. Unidades de Potencia (Motores)</h5>
+                <p>El motor mantiene el bloque V6 turbo de 1.6 litros, pero ahora la potencia se divide equitativamente: 50% combustión y 50% energía eléctrica. Se eliminó el complejo sistema MGU-H, y el recuperador de energía cinética (MGU-K) aumentó su potencia de 120 kW a masivos 350 kW. Además, ahora los monoplazas usan combustible 100% sostenible.</p>
+
+                <h5 class="text-warning mt-4">2. Chasis y Aerodinámica Activa</h5>
+                <p>Para fomentar los sobrepasos rueda a rueda, los autos son ahora más estrechos, cortos y ligeros. Se redujo el "efecto suelo" para disminuir la turbulencia hacia el auto de atrás. Además, debuta la aerodinámica activa, que permite modificar la posición de los alerones en plena marcha.</p>
+
+                <h5 class="text-warning mt-4">3. Modo Boost para Adelantamientos</h5>
+                <p>Los pilotos ahora tienen mayor control estratégico con un botón de "Boost" manual, el cual les entrega una ráfaga adicional de potencia eléctrica (hasta 350 kW) que pueden usar para atacar al rival de adelante o para defender su posición.</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow border-0 border-top border-danger border-4 rounded-3 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-uppercase mb-4 d-flex align-items-center">
+                            <span class="text-danger me-2 lh-1">||</span> Info Clave 2026
+                        </h5>
+                        
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 rounded" style="background-color: rgba(255,255,255,0.05); border-left: 4px solid #ffc107;">
+                                <small class="text-warning text-uppercase fw-bold" style="letter-spacing: 1px;">Nueva Era Técnica</small>
+                                <p class="mb-0 mt-1 fs-6 text-light">Monoplazas más ligeros, motores 50% eléctricos y aerodinámica activa en alerones.</p>
+                            </div>
+
+                            <div class="p-3 rounded" style="background-color: rgba(255,255,255,0.05); border-left: 4px solid #0dcaf0;">
+                                <small class="text-info text-uppercase fw-bold" style="letter-spacing: 1px;">La Batalla</small>
+                                <p class="mb-0 mt-1 fs-6 text-light">Todos los ojos puestos en la defensa del título de <strong>Verstappen</strong> y la consolidación de <strong>Colapinto</strong> en la grilla.</p>
+                            </div>
+
+                            <div class="p-3 rounded" style="background-color: rgba(255,255,255,0.05); border-left: 4px solid #198754;">
+                                <small class="text-success text-uppercase fw-bold" style="letter-spacing: 1px;">Temporada Extrema</small>
+                                <p class="mb-0 mt-1 fs-6 text-light">Calendario récord con 24 Grandes Premios y 6 emocionantes fines de semana con formato Sprint.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
